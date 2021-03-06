@@ -66,7 +66,7 @@ public class FindCriticalAndPseudoCriticalEdges {
                 continue;
             }
 
-            List<Integer> tp = new ArrayList(p);
+            List<Integer> tp = new ArrayList<Integer>(p);
             // 提前连上这条边的两个端点
             tp.set(e.a, e.b);
             // 判断权重是否和之前相同

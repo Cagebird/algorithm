@@ -39,8 +39,4 @@ public class MyAtoI {
         }
         return num;
     }
-
-    public static void main(String[] args) {
-        System.out.println(new MyAtoI().myAtoi(" -42 00"));
-    }
 }

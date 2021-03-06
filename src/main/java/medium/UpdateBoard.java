@@ -20,9 +20,9 @@ public class UpdateBoard {
         if (board[x][y] != 'E') {
             return;
         }
-        int mines_count = withMines(board, x, y);
-        if (mines_count > 0) {
-            board[x][y] = (char) (mines_count + '0');
+        int minesCount = withMines(board, x, y);
+        if (minesCount > 0) {
+            board[x][y] = (char) (minesCount + '0');
             return;
         }
         board[x][y] = 'B';

@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  * @author takaibun
  */
 public class TopKfRequent {
-    public int[] topKFrequent(int[] nums, int k) {
+    public int[] topKfRequent(int[] nums, int k) {
         // 统计每个数字出现的次数
         Map<Integer, Integer> counter = IntStream.of(nums).boxed().collect(Collectors.toMap(e -> e, e -> 1, Integer::sum));
         // 定义小根堆，根据数字频率自小到大排序
